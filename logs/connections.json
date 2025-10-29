@@ -1,0 +1,30 @@
+[
+  {
+    "timestamp": "2025-10-29T17:58:54.973595",
+    "event_type": "connection",
+    "client_ip": "127.0.0.1",
+    "port": 22,
+    "service_type": "SSH"
+  },
+  {
+    "timestamp": "2025-10-29T18:01:16.501742",
+    "event_type": "connection",
+    "client_ip": "127.0.0.1",
+    "port": 80,
+    "service_type": "HTTP"
+  },
+  {
+    "timestamp": "2025-10-29T18:01:43.621363",
+    "event_type": "connection",
+    "client_ip": "127.0.0.1",
+    "port": 80,
+    "service_type": "HTTP"
+  },
+  {
+    "timestamp": "2025-10-29T18:07:41.227980",
+    "event_type": "connection",
+    "client_ip": "127.0.0.1",
+    "port": 80,
+    "service_type": "HTTP"
+  }
+]
