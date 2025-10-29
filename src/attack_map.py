@@ -87,6 +87,34 @@ class RealTimeAttackMap:
         
         print(f"🗺️  Attack mapped: {ip_address} -> {service_type}:{port}")
         return attack_data
+
+    def add_network_scan(self, ip_address, scan_type, details=None):
+        """Add network scanning activity to the map"""
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        
+        # Get location data
+        lat, lon, location, location_type = self.get_ip_location(ip_address)
+        
+        scan_data = {
+            'ip': ip_address,
+            'port': scan_type,
+            'service': 'NETWORK_SCAN',
+            'timestamp': timestamp,
+            'location': location,
+            'location_type': location_type,
+            'lat': lat,
+            'lon': lon,
+            'command': details or f"{scan_type} activity detected"
+        }
+        
+        self.attacks.append(scan_data)
+        
+        # Keep only last 500 attacks to prevent memory issues
+        if len(self.attacks) > 500:
+            self.attacks = self.attacks[-500:]
+        
+        print(f"🕵️  Network Scan: {ip_address} - {scan_type} - {details}")
+        return scan_data
     
     def generate_map_html(self):
         """Generate simple map visualization using HTML5"""
@@ -233,6 +261,7 @@ class RealTimeAttackMap:
         .http {{ background: #28a745; }}
         .telnet {{ background: #ffc107; color: black; }}
         .https {{ background: #6f42c1; }}
+        .network_scan {{ background: #000000; }}
         
         .ip-address {{
             font-family: 'Courier New', monospace;
@@ -333,6 +362,7 @@ class RealTimeAttackMap:
         <div class="controls">
             <button class="btn" onclick="refreshStats()">🔄 Refresh Stats</button>
             <button class="btn" onclick="location.reload()">🔄 Refresh Page</button>
+            <button class="btn" onclick="clearAttacks()">🗑️ Clear History</button>
         </div>
     </div>
 
@@ -348,6 +378,13 @@ class RealTimeAttackMap:
                         document.getElementById('latestAttack').textContent = data.latest_attack.timestamp;
                     }}
                 }});
+        }}
+
+        function clearAttacks() {{
+            if (confirm('Are you sure you want to clear all attack history?')) {{
+                // This would need a backend endpoint to clear attacks
+                alert('Clear functionality would be implemented with a backend endpoint');
+            }}
         }}
 
         // Auto-refresh stats every 5 seconds

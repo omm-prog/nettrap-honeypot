@@ -68,5 +68,26 @@
     "client_ip": "127.0.0.1",
     "port": 80,
     "service_type": "HTTP"
+  },
+  {
+    "timestamp": "2025-10-29T19:20:48.160705",
+    "event_type": "connection",
+    "client_ip": "127.0.0.1",
+    "port": 80,
+    "service_type": "HTTP"
+  },
+  {
+    "timestamp": "2025-10-29T19:26:37.517562",
+    "event_type": "connection",
+    "client_ip": "127.0.0.1",
+    "port": 80,
+    "service_type": "HTTP"
+  },
+  {
+    "timestamp": "2025-10-29T19:32:32.224633",
+    "event_type": "connection",
+    "client_ip": "10.25.104.202",
+    "port": 80,
+    "service_type": "HTTP"
   }
 ]

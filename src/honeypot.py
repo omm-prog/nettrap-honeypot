@@ -3,19 +3,21 @@ import threading
 import json
 import os
 import sys
+from datetime import datetime
 from src.logger import HoneypotLogger
 from src.service_emulators import ServiceEmulator
-from src.attack_map import start_attack_map_daemon  # NEW: Import attack map
+from src.attack_map import start_attack_map_daemon
 
 class NetTrapHoneypot:
     def __init__(self, config_file="config/config.json"):
         self.load_config(config_file)
         
-        # NEW: Start attack map first
+        # Start attack map first
         self.attack_map = start_attack_map_daemon()
         
         # Pass attack map to logger
         self.logger = HoneypotLogger(attack_map=self.attack_map)
+        
         self.service_emulator = ServiceEmulator(self.logger, self.config)
         self.sockets = []
         self.running = False
@@ -30,9 +32,27 @@ class NetTrapHoneypot:
             # Default config
             self.config = {
                 "honeypot": {
-                    "ports": [21, 22, 23, 80, 443],
+                    "ports": [21, 22, 23, 80, 443, 8080, 2222],
                     "bind_address": "0.0.0.0",
                     "max_connections": 10
+                },
+                "services": {
+                    "ssh": {
+                        "banner": "SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.3",
+                        "prompt": "login: "
+                    },
+                    "ftp": {
+                        "banner": "220 FTP Server Ready",
+                        "prompt": "Name: "
+                    },
+                    "telnet": {
+                        "banner": "Welcome to Telnet Server",
+                        "prompt": "login: "
+                    },
+                    "http": {
+                        "banner": "HTTP/1.1 200 OK",
+                        "server_header": "Apache/2.4.41 (Win64)"
+                    }
                 }
             }
     
@@ -126,6 +146,7 @@ class NetTrapHoneypot:
             threads.append(thread)
         
         print("✅ All honeypot services are running!")
+        print("🎯 Now monitoring connections on ports:", self.config['honeypot']['ports'])
         print("🗺️  Attack Dashboard: http://localhost:5000")
         print("🛑 Press Ctrl+C to stop the honeypot")
         
