@@ -112,7 +112,7 @@ Monitor your honeypot activity through the web dashboard:
 start_dashboard.bat
 ```
 
-Then open your browser and navigate to: `http://localhost:8080`
+Then open your browser and navigate to: `http://localhost:5000`
 
 ### Network Monitoring Only
 
@@ -126,7 +126,7 @@ python src/ping_monitor.py
 
 ```bash
 # Start with custom port
-python src/honeypot.py --port 8080
+python src/honeypot.py --port 5000
 
 # Enable verbose logging
 python src/honeypot.py --verbose
