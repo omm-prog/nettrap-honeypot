@@ -8,8 +8,9 @@ from colorama import Fore, Style, init
 init()
 
 class HoneypotLogger:
-    def __init__(self, log_dir="logs"):
+    def __init__(self, log_dir="logs", attack_map=None):
         self.log_dir = log_dir
+        self.attack_map = attack_map  # NEW: Attack map integration
         self.setup_logging()
         
     def setup_logging(self):
@@ -35,6 +36,10 @@ class HoneypotLogger:
         message = f"CONNECTION - {client_ip} connected to {service_type} on port {port}"
         self.logger.info(Fore.GREEN + message + Style.RESET_ALL)
         
+        # NEW: Add to attack map
+        if self.attack_map:
+            self.attack_map.add_attack(client_ip, port, service_type)
+        
         # Also log to connections file
         self.log_to_json({
             "timestamp": datetime.now().isoformat(),
@@ -48,6 +53,10 @@ class HoneypotLogger:
         """Log commands/data received"""
         message = f"COMMAND - {client_ip} on {service_type}:{port} - {command}"
         self.logger.warning(Fore.YELLOW + message + Style.RESET_ALL)
+        
+        # NEW: Update attack map with command data
+        if self.attack_map:
+            self.attack_map.add_attack(client_ip, port, service_type, command)
         
         # Also log to commands file
         self.log_to_json({

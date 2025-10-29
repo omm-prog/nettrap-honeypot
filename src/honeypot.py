@@ -5,11 +5,17 @@ import os
 import sys
 from src.logger import HoneypotLogger
 from src.service_emulators import ServiceEmulator
+from src.attack_map import start_attack_map_daemon  # NEW: Import attack map
 
 class NetTrapHoneypot:
     def __init__(self, config_file="config/config.json"):
         self.load_config(config_file)
-        self.logger = HoneypotLogger()
+        
+        # NEW: Start attack map first
+        self.attack_map = start_attack_map_daemon()
+        
+        # Pass attack map to logger
+        self.logger = HoneypotLogger(attack_map=self.attack_map)
         self.service_emulator = ServiceEmulator(self.logger, self.config)
         self.sockets = []
         self.running = False
@@ -107,6 +113,7 @@ class NetTrapHoneypot:
         print("🚀 Starting NetTrap Honeypot...")
         print("⚠️  Warning: Running honeypot may trigger security alerts!")
         print("📝 Logs will be saved in 'logs' directory")
+        print("🗺️  Real-time attack map available at: http://localhost:5000")
         
         self.running = True
         
@@ -119,6 +126,7 @@ class NetTrapHoneypot:
             threads.append(thread)
         
         print("✅ All honeypot services are running!")
+        print("🗺️  Attack Dashboard: http://localhost:5000")
         print("🛑 Press Ctrl+C to stop the honeypot")
         
         try:

@@ -1,0 +1,224 @@
+2025-10-29 18:54:32,912 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-10-29 18:54:32,912 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-29 18:57:00,544 - INFO - [32mCONNECTION - 127.0.0.1 connected to HTTP on port 80[0m
+2025-10-29 18:57:00,551 - INFO - [32mCONNECTION - 127.0.0.1 connected to HTTP on port 80[0m
+2025-10-29 18:57:00,555 - WARNING - [33mCOMMAND - 127.0.0.1 on HTTP:80 - GET / HTTP/1.1[0m
+2025-10-29 18:57:00,860 - WARNING - [33mCOMMAND - 127.0.0.1 on HTTP:80 - GET /favicon.ico HTTP/1.1[0m
+2025-10-29 18:57:45,135 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 21, in index
+    return self.render_attack_map()
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 126, in render_attack_map
+    margin: 0;
+NameError: name 'margin' is not defined
+2025-10-29 18:57:45,143 - INFO - 127.0.0.1 - - [29/Oct/2025 18:57:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-10-29 18:57:45,387 - INFO - 127.0.0.1 - - [29/Oct/2025 18:57:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-29 18:58:43,888 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 21, in index
+    return self.render_attack_map()
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 126, in render_attack_map
+    margin: 0;
+NameError: name 'margin' is not defined
+2025-10-29 18:58:43,890 - INFO - 127.0.0.1 - - [29/Oct/2025 18:58:43] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-10-29 18:58:44,819 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 21, in index
+    return self.render_attack_map()
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 126, in render_attack_map
+    margin: 0;
+NameError: name 'margin' is not defined
+2025-10-29 18:58:44,821 - INFO - 127.0.0.1 - - [29/Oct/2025 18:58:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-10-29 18:58:45,123 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 21, in index
+    return self.render_attack_map()
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 126, in render_attack_map
+    margin: 0;
+NameError: name 'margin' is not defined
+2025-10-29 18:58:45,127 - INFO - 127.0.0.1 - - [29/Oct/2025 18:58:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-10-29 18:58:45,411 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 21, in index
+    return self.render_attack_map()
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 126, in render_attack_map
+    margin: 0;
+NameError: name 'margin' is not defined
+2025-10-29 18:58:45,412 - INFO - 127.0.0.1 - - [29/Oct/2025 18:58:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-10-29 18:58:45,725 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 21, in index
+    return self.render_attack_map()
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 126, in render_attack_map
+    margin: 0;
+NameError: name 'margin' is not defined
+2025-10-29 18:58:45,726 - INFO - 127.0.0.1 - - [29/Oct/2025 18:58:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-10-29 18:58:45,945 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 21, in index
+    return self.render_attack_map()
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 126, in render_attack_map
+    margin: 0;
+NameError: name 'margin' is not defined
+2025-10-29 18:58:45,948 - INFO - 127.0.0.1 - - [29/Oct/2025 18:58:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-10-29 18:58:46,143 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 21, in index
+    return self.render_attack_map()
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 126, in render_attack_map
+    margin: 0;
+NameError: name 'margin' is not defined
+2025-10-29 18:58:46,145 - INFO - 127.0.0.1 - - [29/Oct/2025 18:58:46] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-10-29 18:58:46,346 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 21, in index
+    return self.render_attack_map()
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 126, in render_attack_map
+    margin: 0;
+NameError: name 'margin' is not defined
+2025-10-29 18:58:46,347 - INFO - 127.0.0.1 - - [29/Oct/2025 18:58:46] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-10-29 18:58:46,609 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 21, in index
+    return self.render_attack_map()
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 126, in render_attack_map
+    margin: 0;
+NameError: name 'margin' is not defined
+2025-10-29 18:58:46,611 - INFO - 127.0.0.1 - - [29/Oct/2025 18:58:46] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-10-29 18:58:46,828 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 21, in index
+    return self.render_attack_map()
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 126, in render_attack_map
+    margin: 0;
+NameError: name 'margin' is not defined
+2025-10-29 18:58:46,829 - INFO - 127.0.0.1 - - [29/Oct/2025 18:58:46] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-10-29 18:58:47,295 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 21, in index
+    return self.render_attack_map()
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 126, in render_attack_map
+    margin: 0;
+NameError: name 'margin' is not defined
+2025-10-29 18:58:47,296 - INFO - 127.0.0.1 - - [29/Oct/2025 18:58:47] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-10-29 18:59:02,849 - INFO - [32mCONNECTION - 127.0.0.1 connected to HTTP on port 80[0m
+2025-10-29 18:59:02,856 - INFO - [32mCONNECTION - 127.0.0.1 connected to HTTP on port 80[0m
+2025-10-29 18:59:02,888 - WARNING - [33mCOMMAND - 127.0.0.1 on HTTP:80 - GET / HTTP/1.1[0m
+2025-10-29 18:59:03,002 - WARNING - [33mCOMMAND - 127.0.0.1 on HTTP:80 - GET /favicon.ico HTTP/1.1[0m
+2025-10-29 18:59:04,384 - INFO - [32mCONNECTION - 127.0.0.1 connected to HTTP on port 80[0m
+2025-10-29 18:59:04,385 - INFO - [32mCONNECTION - 127.0.0.1 connected to HTTP on port 80[0m
+2025-10-29 18:59:04,407 - WARNING - [33mCOMMAND - 127.0.0.1 on HTTP:80 - GET / HTTP/1.1[0m
+2025-10-29 18:59:04,496 - WARNING - [33mCOMMAND - 127.0.0.1 on HTTP:80 - GET /favicon.ico HTTP/1.1[0m
+2025-10-29 18:59:38,868 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Documents\major project\nettrap-honeypot\honeypot_env\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 21, in index
+    return self.render_attack_map()
+  File "C:\Documents\major project\nettrap-honeypot\src\attack_map.py", line 126, in render_attack_map
+    margin: 0;
+NameError: name 'margin' is not defined
+2025-10-29 18:59:38,870 - INFO - 127.0.0.1 - - [29/Oct/2025 18:59:38] "[35m[1mGET / HTTP/1.1[0m" 500 -

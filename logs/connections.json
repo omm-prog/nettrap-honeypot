@@ -26,5 +26,47 @@
     "client_ip": "127.0.0.1",
     "port": 80,
     "service_type": "HTTP"
+  },
+  {
+    "timestamp": "2025-10-29T18:57:00.552847",
+    "event_type": "connection",
+    "client_ip": "127.0.0.1",
+    "port": 80,
+    "service_type": "HTTP"
+  },
+  {
+    "timestamp": "2025-10-29T18:59:02.855992",
+    "event_type": "connection",
+    "client_ip": "127.0.0.1",
+    "port": 80,
+    "service_type": "HTTP"
+  },
+  {
+    "timestamp": "2025-10-29T18:59:04.385053",
+    "event_type": "connection",
+    "client_ip": "127.0.0.1",
+    "port": 80,
+    "service_type": "HTTP"
+  },
+  {
+    "timestamp": "2025-10-29T19:02:12.890443",
+    "event_type": "connection",
+    "client_ip": "127.0.0.1",
+    "port": 80,
+    "service_type": "HTTP"
+  },
+  {
+    "timestamp": "2025-10-29T19:03:21.188838",
+    "event_type": "connection",
+    "client_ip": "127.0.0.1",
+    "port": 80,
+    "service_type": "HTTP"
+  },
+  {
+    "timestamp": "2025-10-29T19:03:23.049139",
+    "event_type": "connection",
+    "client_ip": "127.0.0.1",
+    "port": 80,
+    "service_type": "HTTP"
   }
 ]

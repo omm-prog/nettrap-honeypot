@@ -1,0 +1,16 @@
+2025-10-29 18:51:57,337 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.25.104.122:5000
+2025-10-29 18:51:57,337 - INFO - [33mPress CTRL+C to quit[0m
+2025-10-29 18:53:28,165 - INFO - 10.25.104.122 - - [29/Oct/2025 18:53:28] "GET / HTTP/1.1" 200 -
+2025-10-29 18:53:28,405 - INFO - 10.25.104.122 - - [29/Oct/2025 18:53:28] "GET /api/stats HTTP/1.1" 200 -
+2025-10-29 18:53:29,232 - INFO - 10.25.104.122 - - [29/Oct/2025 18:53:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-29 18:53:33,652 - INFO - 10.25.104.122 - - [29/Oct/2025 18:53:33] "GET /api/stats HTTP/1.1" 200 -
+2025-10-29 18:53:34,768 - INFO - 10.25.104.122 - - [29/Oct/2025 18:53:34] "GET / HTTP/1.1" 200 -
+2025-10-29 18:53:34,829 - INFO - 10.25.104.122 - - [29/Oct/2025 18:53:34] "GET /api/stats HTTP/1.1" 200 -
+2025-10-29 18:53:45,830 - INFO - 10.25.104.122 - - [29/Oct/2025 18:53:45] "GET /api/stats HTTP/1.1" 200 -
+2025-10-29 18:53:55,824 - INFO - 10.25.104.122 - - [29/Oct/2025 18:53:55] "GET /api/stats HTTP/1.1" 200 -
+2025-10-29 18:54:05,826 - INFO - 10.25.104.122 - - [29/Oct/2025 18:54:05] "GET /api/stats HTTP/1.1" 200 -
+2025-10-29 18:54:15,833 - INFO - 10.25.104.122 - - [29/Oct/2025 18:54:15] "GET /api/stats HTTP/1.1" 200 -
+2025-10-29 18:54:25,848 - INFO - 10.25.104.122 - - [29/Oct/2025 18:54:25] "GET /api/stats HTTP/1.1" 200 -
